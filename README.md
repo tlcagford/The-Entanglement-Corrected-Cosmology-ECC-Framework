@@ -175,11 +175,11 @@ SaaS Integration	YES	Negotiable
 If you use this framework in academic work, please cite:
 bibtex
 
-@article{ford2024ecc,
+@article{ford2025ecc,
   title={Entanglement-Corrected Cosmology: A Quantum Resolution to the Hubble Tension},
   author={Ford, Tony E.},
   journal={arXiv preprint},
-  year={2024},
+  year={2025},
   url={https://github.com/tlcagford/The-Entanglement-Corrected-Cosmology-ECC-Framework}
 }
 
@@ -228,7 +228,7 @@ text
 ```markdown
 # Academic and Non-Commercial License
 
-Copyright (c) 2024 Tony E. Ford
+Copyright (c) 2025 Tony E. Ford
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
