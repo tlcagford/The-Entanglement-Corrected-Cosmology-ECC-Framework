@@ -1,0 +1,24 @@
+Entanglement-Corrected-Cosmology/
+│
+├── 1_Data_Ingestion/
+│   ├── hubble_jwst_data_pipeline.py
+│   └── planck_cmb_data_interface.py
+│
+├── 2_Observational_Correction/  <-- **Uses your Image Refiner**
+│   ├── quantum_psf_correction.py  (Enhanced from your Astronomical-Image-Refiner)
+│   └── entanglement_luminosity_correction.py (NEW: applies your dark photon model to flux data)
+│
+├── 3_Theoretical_Correction/  <-- **Uses your Entanglement Framework**
+│   ├── modified_friedmann_solver.py (NEW: integrates ρ_ent(a) into expansion equations)
+│   └── entanglement_density_models.py (NEW: defines different models for ρ_ent(a))
+│
+├── 4_Tension_Resolver/
+│   ├── hubble_constant_calculator.py (NEW: computes H₀ from corrected data & theory)
+│   └── statistical_tension_analyzer.py (NEW: quantifies the reduction in tension)
+│
+├── docs/
+│   └── ECC_WHITEPAPER.md  <-- The formal write-up of our hypothesis and results
+│
+└── OUTPUT/
+    ├── corrected_h0_values.json
+    └── tension_evolution_plots.png
