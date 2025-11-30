@@ -1,0 +1,7 @@
+
+## **8. Initialization Files**
+
+**File: `data_ingestion/__init__.py`**
+```python
+from .hubble_jwst_data_pipeline import DataPipeline
+from .planck_cmb_data_interface import PlanckDataInterface
