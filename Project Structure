@@ -1,0 +1,32 @@
+Entanglement-Corrected-Cosmology/
+│
+├── ecc_orchestrator.py
+├── config/
+│   └── ecc_config.json
+│
+├── data_ingestion/
+│   ├── __init__.py
+│   ├── hubble_jwst_data_pipeline.py
+│   └── planck_cmb_data_interface.py
+│
+├── observational_correction/
+│   ├── __init__.py
+│   ├── quantum_psf_correction.py
+│   └── entanglement_luminosity_correction.py
+│
+├── theoretical_correction/
+│   ├── __init__.py
+│   ├── modified_friedmann_solver.py
+│   └── entanglement_density_models.py
+│
+├── tension_resolver/
+│   ├── __init__.py
+│   ├── hubble_constant_calculator.py
+│   └── statistical_tension_analyzer.py
+│
+├── docs/
+│   └── ECC_WHITEPAPER.md
+│
+└── OUTPUT/
+    ├── corrected_h0_values.json
+    └── tension_evolution_plots.png
