@@ -1,5 +1,1 @@
-# Make sure you're in the ECC framework directory
-cd Entanglement-Corrected-Cosmology
-
-# Run the actual validation
-python get_real_results.py
+python quick_test.py
