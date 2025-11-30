@@ -1,7 +1,5 @@
-# Create the structure
-mkdir -p Entanglement-Corrected-Cosmology/{config,data_ingestion,observational_correction,theoretical_correction,tension_resolver,docs,OUTPUT}
+# Install additional dependencies for Bayesian analysis
+pip install emcee corner
 
-# Add all the files above to their respective locations
-# Then run:
-cd Entanglement-Corrected-Cosmology
-python ecc_orchestrator.py
+# Run the comprehensive scientific validation
+python run_scientific_tests.py
