@@ -1,0 +1,37 @@
+{
+  "data_sources": {
+    "hubble_cepheids": "data/raw/hubble_cepheids.csv",
+    "jwst_supernovae": "data/raw/jwst_supernovae.csv", 
+    "planck_cmb": "data/raw/planck_spectra.fits",
+    "public_catalogues": {
+      "gaia": "https://cdn.gea.esac.esa.int/Gaia/gdr3/",
+      "panstarrs": "https://catalogs.mast.stsci.edu/panstarrs/"
+    }
+  },
+  "psf_params": {
+    "quantum_deconvolution": true,
+    "neural_enhancement": true,
+    "entanglement_aware": true,
+    "deconvolution_iterations": 50,
+    "regularization_strength": 0.01
+  },
+  "entanglement_params": {
+    "dark_photon_coupling": 1e-9,
+    "decoherence_scale": 100,
+    "correction_model": "wavefunction_collapse",
+    "entanglement_persistence": 0.85,
+    "quantum_memory_effect": true
+  },
+  "cosmological_params": {
+    "Omega_m": 0.315,
+    "Omega_lambda": 0.685,
+    "Omega_b": 0.049,
+    "h_initial": 0.674,
+    "sigma_8": 0.811
+  },
+  "output_settings": {
+    "generate_plots": true,
+    "save_intermediate": false,
+    "verbose_logging": true
+  }
+}
