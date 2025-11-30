@@ -1,5 +1,5 @@
-# Check what's actually working
-python debug_framework.py
+# Install required optimization dependencies
+pip install scipy
 
-# If that works, run the quick test
-python quick_test.py
+# Run the optimization
+python run_optimization.py
