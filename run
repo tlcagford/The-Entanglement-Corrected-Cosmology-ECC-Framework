@@ -1,5 +1,5 @@
-# Install additional dependencies for Bayesian analysis
-pip install emcee corner
+# Make sure you're in the ECC framework directory
+cd Entanglement-Corrected-Cosmology
 
-# Run the comprehensive scientific validation
-python run_scientific_tests.py
+# Run the actual validation
+python get_real_results.py
