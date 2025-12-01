@@ -1,0 +1,16 @@
+# Clone the repository
+git clone https://github.com/tlcagford/The-Entanglement-Corrected-Cosmology-ECC-Framework.git
+cd The-Entanglement-Corrected-Cosmology-ECC-Framework
+
+# Check for requirements
+if [ -f "requirements.txt" ]; then
+    pip install -r requirements.txt
+else
+    # Install likely dependencies
+    pip install numpy scipy matplotlib astropy sympy jax jaxlib
+    pip install camb classy
+fi
+
+# Check repository structure
+ls -la
+find . -name "*.py" -type f | head -20
