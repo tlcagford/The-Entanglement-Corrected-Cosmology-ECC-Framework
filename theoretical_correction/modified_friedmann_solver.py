@@ -1,82 +1,47 @@
 import numpy as np
-from scipy.integrate import solve_ivp
-from .entanglement_density_models import get_entanglement_model
 
 class ModifiedFriedmannSolver:
-    """
-    Solves the Friedmann equations with entanglement density correction
-    """
-    
     def __init__(self):
-        self.H0 = 67.4  # Planck base value (km/s/Mpc)
-        self.omega_m = 0.315  # Matter density parameter
-        self.omega_lambda = 0.685  # Dark energy density parameter
-        self.omega_r = 9.2e-5  # Radiation density parameter
-        
-    def friedmann_equation(self, a, y, entanglement_model):
-        """
-        Modified Friedmann equation: H²/H₀² = Ω_m/a³ + Ω_r/a⁴ + Ω_Λ + Ω_ent(a)
-        """
-        H = y[0]
-        
-        # Standard components
-        standard_terms = (self.omega_m / a**3 + 
-                         self.omega_r / a**4 + 
-                         self.omega_lambda)
-        
-        # Entanglement correction from your model
-        omega_ent = entanglement_model.density_parameter(a)
-        
-        # Modified Friedmann equation
-        H_squared = standard_terms + omega_ent
-        
-        return [H * np.sqrt(H_squared)]
-    
-    def solve_with_entanglement(self, cmb_data, model_name='early_dark_energy_like', **model_kwargs):
-        """
-        Solve cosmic expansion history with entanglement correction
-        """
-        # Initialize your entanglement model
-        ent_model = get_entanglement_model(model_name, **model_kwargs)
-        
-        # Scale factor range (from CMB to today)
-        a_span = (1/1100, 1.0)  # Recombination to today
-        a_eval = np.logspace(np.log10(a_span[0]), 0, 1000)
-        
-        # Initial condition: H(a_CMB) from standard cosmology
-        H_init = [self.H0 * np.sqrt(self.omega_m / a_span[0]**3 + 
-                                   self.omega_r / a_span[0]**4 + 
-                                   self.omega_lambda)]
-        
-        # Solve the differential equation
-        solution = solve_ivp(
-            self.friedmann_equation, 
-            a_span, 
-            H_init,
-            args=(ent_model,),
-            t_eval=a_eval,
-            method='RK45'
+        self.H0 = 70  # km/s/Mpc (example value; can be optimized)
+        self.Omega_m = 0.3
+        self.Omega_r = 0  # Approximate, ignoring radiation for simplicity
+        self.Omega_Lambda = 0.7
+
+    def rho_ent(self, a, model_name):
+        """Entanglement density term (as Omega_ent(a))"""
+        if model_name == 'early_dark_energy_like':
+            # Gaussian peak at early times (a ~ 0.001, z ~ 1000)
+            return 0.01 * np.exp( - ((np.log(a) + 8)**2) / 0.5 )
+        elif model_name == 'persistent_entanglement':
+            # Example: Decays slowly
+            return 0.005 / a
+        elif model_name == 'quantum_coherence':
+            # Example: Oscillatory
+            return 0.002 * (1 + np.sin(10 * np.log(a)))
+        else:
+            return 0
+
+    def H(self, a, model_name):
+        """Algebraic computation of H(a)"""
+        return self.H0 * np.sqrt(
+            self.Omega_m / a**3 +
+            self.Omega_r / a**4 +
+            self.Omega_Lambda +
+            self.rho_ent(a, model_name)
         )
-        
-        # Extract Hubble parameter today (a=1)
-        H0_corrected = np.interp(1.0, solution.t, solution.y[0])
-        
-        # Calculate sound horizon at recombination (key CMB quantity)
-        sound_horizon = self.calculate_sound_horizon(solution, ent_model)
-        
-        return {
-            'H0': H0_corrected,
-            'sound_horizon': sound_horizon,
-            'scale_factors': solution.t,
-            'hubble_parameters': solution.y[0],
-            'entanglement_density': [ent_model.density(a) for a in solution.t],
-            'model_used': model_name
-        }
-    
-    def calculate_sound_horizon(self, solution, ent_model):
-        """Calculate sound horizon at recombination with entanglement corrections"""
-        # This would integrate the sound speed with the expansion history
-        # Simplified implementation for now
-        a_recomb = 1/1100
-        H_recomb = np.interp(a_recomb, solution.t, solution.y[0])
-        return 144.0 * (67.4 / H_recomb)  # Approximate scaling
+
+    def solve_with_entanglement(self, a_values, model_name, entanglement_model=None):
+        """Compute H(a) for given scale factors"""
+        if entanglement_model is not None:
+            # If custom model provided, use it for rho_ent (assuming it's a function of a)
+            def rho_ent_custom(a):
+                return entanglement_model(a)
+            H_values = [self.H0 * np.sqrt(
+                self.Omega_m / a**3 +
+                self.Omega_r / a**4 +
+                self.Omega_Lambda +
+                rho_ent_custom(a)
+            ) for a in a_values]
+        else:
+            H_values = [self.H(a, model_name) for a in a_values]
+        return {'H0': self.H0, 'H_values': H_values}
