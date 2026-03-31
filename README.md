@@ -1,924 +1,324 @@
-# The Entanglement-Corrected Cosmology (ECC) Framework
 
-*A Quantum Resolution to the Hubble Tension*
+# Archived Old QCAUS & StealthPDPRadar Projects (v0.1 – v0.9)
 
-[![License: Dual](https://img.shields.io/badge/License-Dual%20License-blue.svg)](LICENSE)
-[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)](https://arxiv.org/)
+**These repositories will be archived on April 14, 2026 (in 2 weeks).**
 
-## 🎯 Breakthrough Achievement
+All previous versions have been superseded by **QCAUS v1.0**.
 
-**The ECC Framework successfully resolves the Hubble Tension**, reducing it from **4.8σ to 1.7σ** through quantum entanglement effects between photons and dark photons. This represents one of the most effective solutions to one of cosmology's biggest puzzles.
+**Please download any code or data you need before April 14, 2026.**
 
-## 📖 Overview
+New unified QCAUS v1.0 contains everything from the old projects plus major improvements (annotated overlays, ZIP export, historical airport presets, full physics display).
 
-The Entanglement-Corrected Cosmology (ECC) Framework implements a novel approach to resolving the Hubble Tension by incorporating quantum entanglement effects between primordial photons and theorized dark photons into cosmological models. The framework:
+**[Launch QCAUS App](https://qcaustfordmodel.streamlit.app/)**]
 
-- **Modifies Friedmann equations** with entanglement density terms
-- **Corrects observational data** using quantum-aware image processing  
-- **Provides Bayesian evidence** for model comparison against ΛCDM
-- **Makes testable predictions** for JWST and future observatories
+https://github.com/tlcagford/QCAUS
 
-## 🚀 Quick Start
+— Tony E. Ford, March 31, 2026
+# 🌌 Quantum Cosmology & Astrophysics Unified Suite (QCAUS)
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://quantum-cosmology-astrophysics-unified-suite.streamlit.app/)
+[![License](https://img.shields.io/badge/License-Dual%20License-blue.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+
+A unified computational framework integrating 8 interconnected open-source projects that explore the quantum nature of the universe – from dark matter solitons to quantum-corrected cosmology, magnetar QED, and stealth/dark-leakage detection. 
+
+**[Launch QCAUS App](https://qcaustfordmodel.streamlit.app/)**
+
+---
+
+## 🔭 Projects Overview
+
+### 1. QCI AstroEntangle Refiner
+**FDM Soliton Physics + Photon-DarkPhoton Entanglement Overlay**
+
+| Feature | Description |
+|---------|-------------|
+| **FDM Soliton** | Fuzzy Dark Matter soliton core: ρ(r) = ρ₀ [sin(kr)/(kr)]² |
+| **PDP Entanglement** | Photon-DarkPhoton kinetic mixing: ℒ_mix = (ε/2) F_μν F'^μν |
+| **Image Processing** | Upload FITS, JPEG, PNG images; apply quantum overlays |
+| **Annotated Comparison** | Before/after views with scale bars and metrics |
+| **Radar-Style Overlay** | Green speckles (FDM) + Blue halos (PDP) for stealth detection visualization |
+
+### 2. Magnetar QED Explorer
+**Strong-Field Quantum Electrodynamics in Magnetar Magnetospheres**
+
+| Feature | Description |
+|---------|-------------|
+| **Dipole Field** | B = B₀ (R/r)³ (2 cosθ, sinθ) |
+| **Vacuum Polarization** | Euler-Heisenberg effect: ΔL = (α/45π) (B/B_crit)² |
+| **Dark Photon Conversion** | P_conversion = ε² (1 - e^{-B²/m²}) |
+| **Interactive Visualization** | Real-time parameter adjustment for B-field, mixing angle |
+
+### 3. Primordial Photon-DarkPhoton Entanglement
+**Von Neumann Evolution in the Expanding Universe**
+
+| Feature | Description |
+|---------|-------------|
+| **Von Neumann Equation** | i∂ρ/∂t = [H_eff, ρ] |
+| **Entanglement Entropy** | S = -Tr(ρ log ρ) |
+| **Mixing Probability** | |⟨ψ_d|ψ_γ⟩|² |
+| **Time Evolution** | Simulates photon-dark photon oscillation in early universe |
+
+### 4. QCIS – Quantum Cosmology Integration Suite
+**Quantum-Corrected Cosmological Perturbations**
+
+| Feature | Description |
+|---------|-------------|
+| **Quantum-Corrected Power Spectrum** | P(k) = P_ΛCDM(k) × (1 + f_NL (k/k₀)^n_q) |
+| **Non-Gaussianity** | f_NL parameter for primordial fluctuations |
+| **Spectral Index** | n_q for quantum corrections |
+| **ΛCDM Comparison** | Side-by-side comparison with standard cosmology |
+
+---
+
+## 📊 Key Metrics & Outputs
+
+| Project | Key Outputs | Download Format |
+|---------|-------------|-----------------|
+| **QCI AstroEntangle** | Annotated comparison, radar-style overlay, FDM soliton map, PDP entanglement map | PNG, JSON |
+| **Magnetar QED** | B-field map, QED polarization, dark photon conversion | PNG, NPZ |
+| **Primordial Entanglement** | Entropy evolution, mixing probability time series | PNG, JSON, NPY |
+| **QCIS** | Power spectra, quantum enhancement ratio | PNG, JSON, NPY |
+
+---
+
+## 🧪 Supported Image Formats
+
+| Format | Extension | Use Case |
+|--------|-----------|----------|
+| **FITS** | .fits, .fit | Astronomical images (Hubble, JWST, Chandra) |
+| **JPEG** | .jpg, .jpeg | Standard images |
+| **PNG** | .png | Lossless images |
+| **BMP** | .bmp | Bitmap images |
+
+---
+
+## 📥 Installation
+
+### Local Setup
 
 ```bash
-# Clone repository
-git clone https://github.com/tlcagford/The-Entanglement-Corrected-Cosmology-ECC-Framework.git
-cd The-Entanglement-Corrected-Cosmology-ECC-Framework
+# Clone the repository
+git clone https://github.com/tlcagford/QCI_AstroEntangle_Refiner.git
+cd QCI_AstroEntangle_Refiner
 
 # Install dependencies
-pip install numpy scipy matplotlib astropy pandas emcee corner
+pip install -r requirements.txt
 
-# Run optimization and validation
-python run_optimization.py
-python closed_loop_test.py
+# Run the app
+streamlit run app.py
+```
 
-🧬 Scientific Foundation
-Core Principles
+### Dependencies
 
-    Quantum entanglement between photon and dark photon fields modifies cosmic expansion history
+```
+streamlit>=1.28.0
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+astropy>=5.3.0  # For FITS support
+Pillow>=10.0.0  # For image processing
+```
 
-    Entanglement density ρ_ent(a) evolves with scale factor and affects H₀ measurements
+---
 
-    Observational corrections account for quantum effects in luminosity measurements
+## 📖 Physics References
 
-Implemented Models
+### FDM Soliton
+The Fuzzy Dark Matter soliton is the ground state solution of the Schrödinger-Poisson equation for ultra-light bosons (axions, ~10⁻²² eV):
 
-    Early Dark Energy-like Entanglement: Peaks during recombination era
+$$\rho(r) = \rho_0 \left[\frac{\sin(kr)}{kr}\right]^2$$
 
-    Persistent Entanglement: Evolves throughout cosmic history
+### Photon-DarkPhoton Kinetic Mixing
+The interaction between photons and dark photons is described by:
 
-    Quantum Coherence: Based on fundamental quantum information principles
+$$\mathcal{L}_{\text{mix}} = \frac{\varepsilon}{2} F_{\mu\nu} F'^{\mu\nu}$$
 
-📊 Key Results
-Hubble Tension Resolution
-Model	Optimized H₀	Tension Reduction
-Early Dark Energy-like	71.24	3.1σ
-Persistent Entanglement	70.98	2.9σ
-Quantum Coherence	70.67	2.6σ
-Statistical Significance
+where ε is the kinetic mixing angle.
 
-    Bayes Factor: >10 (Strong evidence for ECC over ΛCDM)
+### Von Neumann Evolution
+The density matrix evolution for entangled systems:
 
-    p-value: <0.01 (Highly significant tension reduction)
+$$i\partial_t\rho = [H_{\text{eff}}, \rho]$$
 
-    Predictive Accuracy: 85% against independent datasets
+### Quantum-Corrected Power Spectrum
+The matter power spectrum with quantum corrections:
 
-🏗️ Framework Architecture
-text
+$$P(k) = P_{\Lambda\text{CDM}}(k) \times \left(1 + f_{\text{NL}}\left(\frac{k}{k_0}\right)^{n_q}\right)$$
 
-ECC-Framework/
-├── data_ingestion/           # Planck, SH0ES, JWST data interfaces
-├── theoretical_correction/   # Entanglement density models
-├── observational_correction/ # Quantum-aware data processing
-├── tension_resolver/         # Statistical analysis tools
-├── optimization/             # Parameter optimization engine
-└── OUTPUT/                   # Results, plots, and validation data
+---
 
-🔧 Usage Examples
-Basic Tension Analysis
-python
+## 🚀 Quick Start Examples
 
-from ecc_orchestrator import ECCOrchestrator
+### QCI AstroEntangle Refiner
+```python
+# Load image and apply FDM + PDP overlays
+from qci_astro import process_qci_astro
+enhanced, soliton, pdp = process_qci_astro(image_data, omega=0.5, fringe=1.0, soliton_scale=1.0)
+```
 
-# Initialize and run complete analysis
-orchestrator = ECCOrchestrator()
-results = orchestrator.run_full_analysis()
+### Magnetar QED Explorer
+```python
+# Compute magnetar field and dark photon conversion
+from magnetar_qed import process_magnetar
+B_mag, qed, dark_photons = process_magnetar(r_grid, theta_grid, B0=1e15, mixing=0.1)
+```
 
-print(f"Optimized H₀: {results['h0_early_corrected']:.2f}")
+### Primordial Entanglement
+```python
+# Simulate photon-dark photon entanglement evolution
+from primordial_entanglement import process_primordial_entanglement
+entropy, mixing = process_primordial_entanglement(omega=0.7, dark_mass=1e-9, mixing=0.1)
+```
 
-Model Comparison
-python
+### QCIS Power Spectra
+```python
+# Compute quantum-corrected power spectrum
+from qcis import process_qcis
+P_quantum = process_qcis(k_vals, f_nl=1.0, n_q=0.5)
+```
 
-from theoretical_correction.entanglement_density_models import get_entanglement_model
-from tension_resolver.bayesian_evidence import BayesianEvidenceCalculator
+---
 
-# Compare models using Bayesian evidence
-evidence_calc = BayesianEvidenceCalculator(cmb_data, late_data)
-lcdm_evidence, ecc_evidence = evidence_calc.compare_models()
+## 📊 Example Outputs
 
-JWST Predictions
-python
+### Annotated Comparison (Abell-1689)
+- **Before**: Standard HST/JWST data with scale bar (100 kpc)
+- **After**: FDM Soliton + PDP Entanglement overlays
+- **Metrics**: Maximum Mixing Ratio, Minimum Entropy, FDM Value (kpc)
 
-from predictions.jwst_predictor import JWSTPredictor
+### Radar-Style Overlay
+- **Green**: FDM Soliton (dark matter density)
+- **Blue**: PDP Entanglement (dark photon field)
+- **Red**: Original astrophysical signal
 
-# Generate predictions for JWST observations
-jwst_predictor = JWSTPredictor(friedmann_solver, entanglement_model)
-predictions = jwst_predictor.predict_high_z_hubble_flow()
+### Magnetar Field Maps
+- **B-Field**: Dipole field structure (B ∝ r⁻³)
+- **QED Polarization**: Euler-Heisenberg vacuum effects
+- **Dark Photons**: Conversion probability maps
 
-📈 Validation & Results
+### Power Spectra
+- **ΛCDM**: Standard cosmology baseline
+- **Quantum**: Corrected spectrum with f_NL and n_q parameters
 
-The framework has been rigorously validated against:
+---
 
-    Planck 2018 CMB data
+## 📄 Citation
 
-    SH0ES distance ladder measurements
+If you use QCAUS in your research, please cite:
 
-    ACT and WMAP independent constraints
-
-    Bayesian model comparison against ΛCDM
-
-Key Validation Metrics
-
-    ✅ Tension Reduction: 4.8σ → 1.7σ
-
-    ✅ Statistical Significance: p < 0.01
-
-    ✅ Parameter Reasonableness: Physically plausible entanglement strengths
-
-    ✅ Predictive Power: 85% agreement with independent data
-"""
-Modified Friedmann Solver for Entanglement-Corrected Cosmology (ECC) Framework
-
-This module implements the modified Friedmann equations with quantum entanglement
-corrections. It provides numerical solvers and analytical approximations for
-cosmological evolution with various entanglement models.
-
-Author: T.E. Ford
-Repository: https://github.com/tlcagford/The-Entanglement-Corrected-Cosmology-ECC-Framework
-"""
-
-import numpy as np
-from typing import Union, Callable, Dict, List, Optional, Tuple
-import warnings
-
-class ModifiedFriedmannSolver:
-    """
-    A solver for the modified Friedmann equation incorporating quantum 
-    entanglement/quantum correlation terms in cosmology.
-    
-    This class computes cosmological evolution including additional
-    density contributions from quantum entanglement effects, which may
-    act as an effective dark energy component with non-trivial evolution.
-    
-    Parameters
-    ----------
-    H0 : float, optional
-        Hubble constant at present time (km/s/Mpc), default=70
-    Omega_m0 : float, optional
-        Present matter density parameter, default=0.3
-    Omega_r0 : float, optional
-        Present radiation density parameter, default=8.24e-5
-    Omega_Lambda0 : float, optional
-        Present dark energy density parameter, default=0.7
-    Omega_k0 : float, optional
-        Present curvature density parameter, default=0
-    
-    Attributes
-    ----------
-    H0 : float
-        Hubble constant (km/s/Mpc)
-    Omega_m0 : float
-        Present matter density parameter
-    Omega_r0 : float
-        Present radiation density parameter
-    Omega_Lambda0 : float
-        Present cosmological constant density parameter
-    Omega_k0 : float
-        Present curvature density parameter
-    Omega_total0 : float
-        Sum of all density parameters at present
-        
-    Notes
-    -----
-    The modified Friedmann equation implemented is:
-    
-    H(a)^2 = H0^2 * [Ω_m0 * a^{-3} + Ω_r0 * a^{-4} + Ω_k0 * a^{-2} + Ω_Λ0 + Ω_ent(a)]
-    
-    where Ω_ent(a) represents the entanglement correction term.
-    """
-    
-    def __init__(self, 
-                 H0: float = 70.0, 
-                 Omega_m0: float = 0.3,
-                 Omega_r0: float = 8.24e-5,
-                 Omega_Lambda0: float = 0.7,
-                 Omega_k0: float = 0.0):
-        """Initialize cosmological parameters."""
-        self.H0 = H0
-        self.Omega_m0 = Omega_m0
-        self.Omega_r0 = Omega_r0
-        self.Omega_Lambda0 = Omega_Lambda0
-        self.Omega_k0 = Omega_k0
-        
-        # Calculate total density parameter (should be 1 for flat universe)
-        self.Omega_total0 = Omega_m0 + Omega_r0 + Omega_Lambda0 + Omega_k0
-        
-        # Check for flatness (within tolerance)
-        if abs(self.Omega_total0 - 1.0) > 1e-3:
-            warnings.warn(f"Total density parameter Ω_total0 = {self.Omega_total0:.4f} "
-                         f"deviates significantly from 1 (flat universe)")
-    
-    def standard_density_terms(self, a: Union[float, np.ndarray]) -> Dict[str, np.ndarray]:
-        """
-        Compute standard ΛCDM density terms as functions of scale factor.
-        
-        Parameters
-        ----------
-        a : float or np.ndarray
-            Scale factor (normalized to a=1 today)
-        
-        Returns
-        -------
-        dict
-            Dictionary containing:
-            - 'matter': Ω_m0 * a^{-3}
-            - 'radiation': Ω_r0 * a^{-4}
-            - 'curvature': Ω_k0 * a^{-2}
-            - 'cosmological_constant': Ω_Λ0 (constant)
-        """
-        return {
-            'matter': self.Omega_m0 / a**3,
-            'radiation': self.Omega_r0 / a**4,
-            'curvature': self.Omega_k0 / a**2,
-            'cosmological_constant': self.Omega_Lambda0 * np.ones_like(a)
-        }
-    
-    def entanglement_density(self, 
-                            a: Union[float, np.ndarray], 
-                            model_name: str = 'early_dark_energy_like',
-                            **kwargs) -> Union[float, np.ndarray]:
-        """
-        Compute entanglement density term Ω_ent(a) for various models.
-        
-        Parameters
-        ----------
-        a : float or np.ndarray
-            Scale factor (normalized to a=1 today)
-        model_name : str, optional
-            Name of entanglement model. Options:
-            - 'early_dark_energy_like': Gaussian peak at early times
-            - 'persistent_entanglement': Power-law decaying entanglement
-            - 'quantum_coherence': Oscillatory quantum coherence effects
-            - 'step_function': Sudden phase transition model
-            - 'logarithmic': Logarithmic dependence on scale factor
-            - 'custom': User-defined model (requires custom_function)
-        **kwargs
-            Model-specific parameters:
-            - amplitude (float): Amplitude of entanglement effect
-            - peak_scale (float): Scale factor at peak (for Gaussian)
-            - width (float): Width of Gaussian peak
-            - decay_exponent (float): Decay exponent for power-law
-            - frequency (float): Frequency for oscillatory models
-            - transition_scale (float): Transition scale for step function
-            - custom_function (callable): Custom Ω_ent(a) function
-            
-        Returns
-        -------
-        float or np.ndarray
-            Entanglement density contribution Ω_ent(a)
-        
-        Raises
-        ------
-        ValueError
-            If model_name is not recognized
-            
-        Notes
-        -----
-        The entanglement density is dimensionless and adds to the total
-        energy density in the Friedmann equation.
-        """
-        # Default parameters
-        amplitude = kwargs.get('amplitude', 0.01)
-        peak_scale = kwargs.get('peak_scale', 1e-3)  # a ~ 0.001 (z ~ 1000)
-        width = kwargs.get('width', 0.5)
-        decay_exponent = kwargs.get('decay_exponent', 1.0)
-        frequency = kwargs.get('frequency', 10.0)
-        transition_scale = kwargs.get('transition_scale', 0.1)
-        
-        if model_name == 'early_dark_energy_like':
-            # Gaussian peak centered at early times
-            return amplitude * np.exp(-((np.log(a) - np.log(peak_scale))**2) / (2 * width**2))
-            
-        elif model_name == 'persistent_entanglement':
-            # Power-law decaying entanglement
-            return amplitude / (a**decay_exponent)
-            
-        elif model_name == 'quantum_coherence':
-            # Oscillatory behavior from quantum coherence
-            return amplitude * (1 + np.sin(frequency * np.log(a)))
-            
-        elif model_name == 'step_function':
-            # Sudden phase transition model
-            return amplitude * (0.5 * (1 + np.tanh((np.log(a) - np.log(transition_scale)) / 0.1)))
-            
-        elif model_name == 'logarithmic':
-            # Logarithmic dependence (motivated by entanglement entropy)
-            return amplitude * (1 - np.log(a))
-            
-        elif model_name == 'custom':
-            custom_func = kwargs.get('custom_function')
-            if custom_func is None:
-                raise ValueError("custom_function must be provided for 'custom' model")
-            return custom_func(a)
-            
-        else:
-            raise ValueError(f"Unknown model_name: {model_name}. "
-                           f"Available models: {self.list_available_models()}")
-    
-    def H(self, 
-          a: Union[float, np.ndarray], 
-          model_name: str = 'early_dark_energy_like',
-          **kwargs) -> Union[float, np.ndarray]:
-        """
-        Compute Hubble parameter H(a) including entanglement effects.
-        
-        Parameters
-        ----------
-        a : float or np.ndarray
-            Scale factor (normalized to a=1 today)
-        model_name : str, optional
-            Name of entanglement model
-        **kwargs
-            Parameters passed to entanglement_density method
-        
-        Returns
-        -------
-        float or np.ndarray
-            Hubble parameter H(a) in km/s/Mpc
-            
-        Examples
-        --------
-        >>> solver = ModifiedFriedmannSolver()
-        >>> H = solver.H(0.5, model_name='early_dark_energy_like')
-        >>> H_values = solver.H(np.linspace(0.1, 1, 100), model_name='quantum_coherence')
-        """
-        # Compute standard density terms
-        densities = self.standard_density_terms(a)
-        
-        # Compute entanglement density
-        omega_ent = self.entanglement_density(a, model_name, **kwargs)
-        
-        # Sum all contributions
-        total_density = (densities['matter'] + 
-                        densities['radiation'] + 
-                        densities['curvature'] + 
-                        densities['cosmological_constant'] + 
-                        omega_ent)
-        
-        # Ensure non-negative
-        total_density = np.maximum(total_density, 0)
-        
-        return self.H0 * np.sqrt(total_density)
-    
-    def H_z(self, 
-           z: Union[float, np.ndarray], 
-           model_name: str = 'early_dark_energy_like',
-           **kwargs) -> Union[float, np.ndarray]:
-        """
-        Compute Hubble parameter H(z) as function of redshift.
-        
-        Parameters
-        ----------
-        z : float or np.ndarray
-            Redshift
-        model_name : str, optional
-            Name of entanglement model
-        **kwargs
-            Parameters passed to entanglement_density method
-        
-        Returns
-        -------
-        float or np.ndarray
-            Hubble parameter H(z) in km/s/Mpc
-        """
-        a = 1.0 / (1.0 + z)
-        return self.H(a, model_name, **kwargs)
-    
-    def critical_density(self, 
-                        a: Union[float, np.ndarray],
-                        model_name: str = 'early_dark_energy_like',
-                        **kwargs) -> Union[float, np.ndarray]:
-        """
-        Compute critical density ρ_crit(a) including entanglement effects.
-        
-        Parameters
-        ----------
-        a : float or np.ndarray
-            Scale factor
-        model_name : str, optional
-            Name of entanglement model
-        **kwargs
-            Parameters passed to entanglement_density method
-        
-        Returns
-        -------
-        float or np.ndarray
-            Critical density in units where H0^2 sets the scale
-        """
-        H_a = self.H(a, model_name, **kwargs)
-        # ρ_crit = 3H^2/(8πG), but we return in dimensionless units
-        # relative to standard critical density today
-        return (H_a / self.H0)**2
-    
-    def omega_components(self, 
-                        a: Union[float, np.ndarray],
-                        model_name: str = 'early_dark_energy_like',
-                        **kwargs) -> Dict[str, np.ndarray]:
-        """
-        Compute all density parameters as functions of scale factor.
-        
-        Parameters
-        ----------
-        a : float or np.ndarray
-            Scale factor
-        model_name : str, optional
-            Name of entanglement model
-        **kwargs
-            Parameters passed to entanglement_density method
-        
-        Returns
-        -------
-        dict
-            Dictionary containing Ω_i(a) for all components
-        """
-        # Compute Hubble parameter
-        H_a = self.H(a, model_name, **kwargs)
-        
-        # Compute density parameters
-        densities = self.standard_density_terms(a)
-        omega_ent = self.entanglement_density(a, model_name, **kwargs)
-        
-        # Normalize by critical density
-        rho_crit = self.critical_density(a, model_name, **kwargs)
-        
-        components = {}
-        for name, value in densities.items():
-            components[name] = value / rho_crit
-        components['entanglement'] = omega_ent / rho_crit
-        
-        return components
-    
-    def solve_cosmological_evolution(self,
-                                    a_range: Tuple[float, float] = (1e-10, 1.0),
-                                    n_points: int = 1000,
-                                    model_name: str = 'early_dark_energy_like',
-                                    **kwargs) -> Dict[str, np.ndarray]:
-        """
-        Solve for cosmological evolution over a range of scale factors.
-        
-        Parameters
-        ----------
-        a_range : tuple, optional
-            (a_min, a_max) range for solution
-        n_points : int, optional
-            Number of points in solution
-        model_name : str, optional
-            Name of entanglement model
-        **kwargs
-            Parameters passed to entanglement_density method
-        
-        Returns
-        -------
-        dict
-            Dictionary containing:
-            - 'a': Scale factors
-            - 'z': Redshifts
-            - 'H': Hubble parameters
-            - 'Omega_i': Density parameters for all components
-        """
-        a_min, a_max = a_range
-        
-        # Create scale factor array (logarithmic spacing for early times)
-        if a_min < 0.01:
-            a = np.logspace(np.log10(a_min), np.log10(a_max), n_points)
-        else:
-            a = np.linspace(a_min, a_max, n_points)
-        
-        # Compute Hubble parameter
-        H = self.H(a, model_name, **kwargs)
-        
-        # Compute density parameters
-        omega_dict = self.omega_components(a, model_name, **kwargs)
-        
-        # Compute redshift
-        z = 1.0 / a - 1.0
-        
-        # Package results
-        results = {
-            'scale_factor': a,
-            'redshift': z,
-            'Hubble': H,
-            'density_parameters': omega_dict,
-            'entanglement_model': model_name,
-            'cosmological_parameters': {
-                'H0': self.H0,
-                'Omega_m0': self.Omega_m0,
-                'Omega_r0': self.Omega_r0,
-                'Omega_Lambda0': self.Omega_Lambda0,
-                'Omega_k0': self.Omega_k0
-            }
-        }
-        
-        return results
-    
-    def compare_with_lcdm(self,
-                         a: Union[float, np.ndarray],
-                         model_name: str = 'early_dark_energy_like',
-                         **kwargs) -> Dict[str, np.ndarray]:
-        """
-        Compare ECC model with standard ΛCDM predictions.
-        
-        Parameters
-        ----------
-        a : float or np.ndarray
-            Scale factor
-        model_name : str, optional
-            Name of entanglement model
-        **kwargs
-            Parameters passed to entanglement_density method
-        
-        Returns
-        -------
-        dict
-            Dictionary containing comparison metrics:
-            - 'H_ECC': Hubble parameter in ECC model
-            - 'H_LCDM': Hubble parameter in ΛCDM
-            - 'relative_difference': (H_ECC - H_LCDM) / H_LCDM
-            - 'Omega_ent': Entanglement density parameter
-        """
-        # ECC Hubble parameter
-        H_ecc = self.H(a, model_name, **kwargs)
-        
-        # ΛCDM Hubble parameter (no entanglement)
-        H_lcdm = self.H0 * np.sqrt(
-            self.Omega_m0 / a**3 +
-            self.Omega_r0 / a**4 +
-            self.Omega_k0 / a**2 +
-            self.Omega_Lambda0
-        )
-        
-        # Entanglement density
-        omega_ent = self.entanglement_density(a, model_name, **kwargs)
-        
-        return {
-            'H_ECC': H_ecc,
-            'H_LCDM': H_lcdm,
-            'relative_difference': (H_ecc - H_lcdm) / H_lcdm,
-            'Omega_ent': omega_ent,
-            'scale_factor': a
-        }
-    
-    def compute_luminosity_distance(self,
-                                   z: Union[float, np.ndarray],
-                                   model_name: str = 'early_dark_energy_like',
-                                   n_points: int = 1000,
-                                   **kwargs) -> Union[float, np.ndarray]:
-        """
-        Compute luminosity distance D_L(z) in ECC cosmology.
-        
-        Parameters
-        ----------
-        z : float or np.ndarray
-            Redshift(s) at which to compute distance
-        model_name : str, optional
-            Name of entanglement model
-        n_points : int, optional
-            Number of integration points for numerical integration
-        **kwargs
-            Parameters passed to entanglement_density method
-        
-        Returns
-        -------
-        float or np.ndarray
-            Luminosity distance in Mpc
-        """
-        # Convert to array for consistent processing
-        z = np.atleast_1d(z)
-        
-        # Speed of light in km/s
-        c = 299792.458
-        
-        # Initialize results array
-        d_L = np.zeros_like(z)
-        
-        # For each redshift, integrate 1/H(z')
-        for i, zi in enumerate(z):
-            if zi == 0:
-                d_L[i] = 0
-                continue
-                
-            # Create integration grid
-            z_grid = np.linspace(0, zi, n_points)
-            a_grid = 1.0 / (1.0 + z_grid)
-            
-            # Compute Hubble parameter on grid
-            H_grid = self.H(a_grid, model_name, **kwargs)
-            
-            # Integrate using trapezoidal rule
-            integrand = 1.0 / H_grid
-            integral = np.trapz(integrand, z_grid)
-            
-            # Luminosity distance
-            d_L[i] = c * (1 + zi) * integral
-        
-        return d_L[0] if d_L.size == 1 else d_L
-    
-    @staticmethod
-    def list_available_models() -> List[str]:
-        """List all available entanglement models."""
-        return [
-            'early_dark_energy_like',
-            'persistent_entanglement',
-            'quantum_coherence',
-            'step_function',
-            'logarithmic',
-            'custom'
-        ]
-    
-    def validate_model_parameters(self, 
-                                 model_name: str,
-                                 **kwargs) -> bool:
-        """
-        Validate parameters for a given entanglement model.
-        
-        Parameters
-        ----------
-        model_name : str
-            Name of entanglement model
-        **kwargs
-            Parameters to validate
-        
-        Returns
-        -------
-        bool
-            True if parameters are valid
-            
-        Raises
-        ------
-        ValueError
-            If parameters are invalid
-        """
-        if model_name == 'custom':
-            if 'custom_function' not in kwargs:
-                raise ValueError("custom_function must be provided for 'custom' model")
-            if not callable(kwargs['custom_function']):
-                raise ValueError("custom_function must be callable")
-        
-        # Check amplitude is positive
-        amplitude = kwargs.get('amplitude', 0.01)
-        if amplitude < 0:
-            raise ValueError("amplitude must be non-negative")
-        
-        # Check scale factors are positive
-        for key in ['peak_scale', 'transition_scale']:
-            if key in kwargs and kwargs[key] <= 0:
-                raise ValueError(f"{key} must be positive")
-        
-        return True
-    
-    def to_dict(self) -> Dict:
-        """Export cosmological parameters to dictionary."""
-        return {
-            'H0': self.H0,
-            'Omega_m0': self.Omega_m0,
-            'Omega_r0': self.Omega_r0,
-            'Omega_Lambda0': self.Omega_Lambda0,
-            'Omega_k0': self.Omega_k0,
-            'Omega_total0': self.Omega_total0
-        }
-    
-    @classmethod
-    def from_dict(cls, params: Dict) -> 'ModifiedFriedmannSolver':
-        """Create solver from dictionary of parameters."""
-        return cls(
-            H0=params.get('H0', 70.0),
-            Omega_m0=params.get('Omega_m0', 0.3),
-            Omega_r0=params.get('Omega_r0', 8.24e-5),
-            Omega_Lambda0=params.get('Omega_Lambda0', 0.7),
-            Omega_k0=params.get('Omega_k0', 0.0)
-        )
-
-
-# Convenience function for quick calculations
-def compute_H_with_entanglement(a: Union[float, np.ndarray],
-                               model_name: str = 'early_dark_energy_like',
-                               H0: float = 70.0,
-                               Omega_m0: float = 0.3,
-                               Omega_Lambda0: float = 0.7,
-                               **kwargs) -> Union[float, np.ndarray]:
-    """
-    Quick computation of H(a) with entanglement corrections.
-    
-    Parameters
-    ----------
-    a : float or np.ndarray
-        Scale factor
-    model_name : str, optional
-        Entanglement model name
-    H0 : float, optional
-        Hubble constant
-    Omega_m0 : float, optional
-        Matter density parameter
-    Omega_Lambda0 : float, optional
-        Cosmological constant density parameter
-    **kwargs
-        Additional parameters for entanglement model
-    
-    Returns
-    -------
-    float or np.ndarray
-        Hubble parameter H(a)
-    """
-    solver = ModifiedFriedmannSolver(H0=H0, 
-                                    Omega_m0=Omega_m0, 
-                                    Omega_Lambda0=Omega_Lambda0)
-    return solver.H(a, model_name, **kwargs)
-
-
-if __name__ == "__main__":
-    # Example usage
-    print("Modified Friedmann Solver for ECC Framework")
-    print("=" * 50)
-    
-    # Create solver
-    solver = ModifiedFriedmannSolver(H0=70, Omega_m0=0.3, Omega_Lambda0=0.7)
-    
-    # Test different models
-    a_test = np.logspace(-4, 0, 50)  # From early universe to today
-    
-    print("\nTesting different entanglement models:")
-    print("-" * 40)
-    
-    models = ['early_dark_energy_like', 'persistent_entanglement', 'quantum_coherence']
-    
-    for model in models:
-        H = solver.H(a_test, model_name=model)
-        print(f"{model:30s}: H(a=0.1) = {solver.H(0.1, model_name=model):.2f} km/s/Mpc")
-    
-    # Compare with ΛCDM
-    print("\nComparison with ΛCDM at a=0.5:")
-    print("-" * 40)
-    
-    comparison = solver.compare_with_lcdm(0.5, model_name='early_dark_energy_like')
-    print(f"H_ECC  = {comparison['H_ECC']:.2f} km/s/Mpc")
-    print(f"H_ΛCDM = {comparison['H_LCDM']:.2f} km/s/Mpc")
-    print(f"Relative difference: {comparison['relative_difference']*100:.2f}%")
-    print(f"Ω_ent(a=0.5) = {comparison['Omega_ent']:.6f}")
-
-📜 License
-Dual License Structure
-
-This software is available under two distinct licenses:
-1. Academic/Non-Commercial License (FREE)
-
-    For: Academic researchers, students, non-profit organizations
-
-    Permissions:
-
-        Free use, modification, and distribution
-
-        Use in academic research and publications
-
-        Classroom and educational use
-
-    Requirements:
-
-        Cite the original work in publications
-
-        No commercial use allowed
-
-2. Personal Commercial License (REQUIRED)
-
-    For: Companies, commercial organizations, for-profit use
-
-    Requirements:
-
-        License required for any commercial use
-
-        Contact: Tony E. Ford - 📧 tlcagford@gmail.com
-
-        Commercial licensing terms negotiated individually
-
-Usage Rights Summary
-Use Case	License Required	Cost
-Academic Research	No	FREE
-University Teaching	No	FREE
-Personal Projects	No	FREE
-Commercial Product	YES	Negotiable
-Corporate R&D	YES	Negotiable
-SaaS Integration	YES	Negotiable
-🤝 How to Cite
-
-If you use this framework in academic work, please cite:
-bibtex
-
-@article{ford2025ecc,
-  title={Entanglement-Corrected Cosmology: A Quantum Resolution to the Hubble Tension},
-  author={Ford, Tony E.},
-  journal={arXiv preprint},
-  year={2025},
-  url={https://github.com/tlcagford/The-Entanglement-Corrected-Cosmology-ECC-Framework}
+```bibtex
+@software{Ford2026QCAUS,
+  author = {Ford, Tony E.},
+  title = {Quantum Cosmology \& Astrophysics Unified Suite (QCAUS)},
+  year = {2026},
+  url = {https://github.com/tlcagford/QCI_AstroEntangle_Refiner},
+  doi = {10.5281/zenodo.xxxxxxx}
 }
+```
 
-🐛 Bug Reports & Contributions
+---
 
-We welcome:
+## 📜 License
 
-    🐛 Bug reports via GitHub Issues
+This project is released under a **Dual License**:
 
-    💡 Feature suggestions
+- **Academic / Non-Commercial Use**: Free for research, education, and personal projects
+- **Commercial Use**: Requires a separate license. Please contact the author for details.
 
-    🔬 Validation against new datasets
+See the `LICENSE` file for full terms.
 
-    📚 Documentation improvements
+---
 
-For commercial licensing: Please contact Tony E. Ford directly at tlcagford@gmail.com
-🔮 Future Work
+## 📧 Contact
 
-    Integration with JWST early release data
-
-    MCMC parameter estimation chains
-
-    Interface with CLASS and CAMB
-
-    Extended dark sector entanglement models
-
-    Gravitational wave implications
-
-📚 References
-
-    Planck Collaboration 2018, A&A, 641, A6
-
-    Riess et al. 2022, ApJ, 934, L7
-
-    The Stellaris QED Engine (theoretical foundation)
-
-    Primordial-Photon-Dark-Photon-Entanglement framework
-
-Developed by Tony E. Ford • 📧 tlcagford@gmail.com • 🔬 Solving cosmic puzzles with quantum entanglement
-text
-
-
-## Additional License Files:
-
-**File: `LICENSE-ACADEMIC.md`**
-```markdown
-# Academic and Non-Commercial License
-
-Copyright (c) 2025 Tony E. Ford
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software for non-commercial purposes, including without limitation 
-the rights to use, copy, modify, merge, publish, distribute, and/or sell copies
-of the Software for academic, educational, and research purposes, subject to 
-the following conditions:
-
-## Permitted Uses (FREE):
-- Academic research and publications
-- University teaching and coursework
-- Non-profit organization use
-- Personal projects and experimentation
-- Open source derivative works
-
-## Prohibited Uses (REQUIRE COMMERCIAL LICENSE):
-- Commercial product integration
-- Corporate research and development
-- SaaS platforms and services
-- For-profit consulting services
-- Any revenue-generating activities
-
-## Requirements:
-1. Give appropriate credit to the original author
-2. Include this license in any distributions
-3. Do not use for commercial purposes without separate license
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND...
-
-File: COMMERCIAL_LICENSING.md
-markdown
-
-# Commercial Licensing Information
-
-## Contact for Commercial Use
 **Tony E. Ford**  
-📧 tlcagford@gmail.com
+Independent Researcher / Astrophysics & Quantum Systems  
+GitHub: [@tlcagford](https://github.com/tlcagford)  
+Email: tlcagford@gmail.com
 
-## Commercial License Includes:
-- Royalty-free use in commercial products
-- Technical support and documentation
-- Updates and maintenance
-- Custom modification rights
-- Private deployment rights
+---
 
-## Typical Use Cases:
-- Cosmology software companies
-- Research institutions with commercial arms
-- Data analytics platforms
-- Educational technology companies
-- Government contractors
+## 🙏 Acknowledgments
 
-## Licensing Process:
-1. Contact with your use case details
-2. Receive custom license proposal
-3. Review and sign agreement
-4. Receive licensed software package
+- **NASA/ESA Hubble Space Telescope & JWST** for public FITS data
+- **OpenSky Network** for radar data integration
+- **FDM, QED, and cosmology communities** for foundational research
+- **Streamlit, NumPy, SciPy, Matplotlib, Astropy** for open-source tools
 
-## Pricing:
-- Based on organization size and use case
-- Academic discounts available
-- Startup-friendly terms
-- Volume licensing for large organizations
+---
 
-*All commercial uses require a license agreement.*
+## 🔗 Related Projects
+
+| Project | Repository |
+|---------|------------|
+| **StealthPDPRadar** | [StealthPDPRadar](https://github.com/tlcagford/StealthPDPRadar) |
+| **Magnetar QED Explorer** | [Magnetar-Quantum-Vacuum-Engineering](https://github.com/tlcagford/Magnetar-Quantum-Vacuum-Engineering-for-Extreme-Astrophysical-Environments-) |
+| **Primordial Entanglement** | [Primordial-Photon-DarkPhoton-Entanglement](https://github.com/tlcagford/Primordial-Photon-DarkPhoton-Entanglement) |
+| **QCIS** | [Quantum-Cosmology-Integration-Suite](https://github.com/tlcagford/Quantum-Cosmology-Integration-Suite-QCIS-) |
+
+---
+
+*"Exploring the quantum nature of the universe – from dark matter solitons to quantum-corrected cosmology."*
+
+---
+
+## 📸 Screenshots
+
+### QCI AstroEntangle Refiner
+![Annotated Comparison](docs/images/comparison.png)
+*Annotated before/after comparison of Abell-1689 with FDM Soliton and PDP Entanglement overlays*
+
+### Magnetar QED Explorer
+![Magnetar Fields](docs/images/magnetar.png)
+*Magnetar dipole field with quantum vacuum polarization and dark photon conversion*
+
+### Primordial Entanglement
+![Entanglement Evolution](docs/images/entanglement.png)
+*Von Neumann entropy evolution and photon-dark photon mixing probability*
+
+### QCIS Power Spectra
+![Power Spectrum](docs/images/power_spectrum.png)
+*Quantum-corrected matter power spectrum vs ΛCDM*
+
+---
+
+## 🚀 Quick Deploy to Streamlit Cloud
+
+1. Fork this repository
+2. Go to [Streamlit Cloud](https://share.streamlit.io)
+3. Click "New app"
+4. Select your repository and branch
+5. Set main file path to `app.py`
+6. Click "Deploy"
+
+Your app will be live at `https://your-app-name.streamlit.app`
+```
+
+---
+
+## 📁 Additional Files to Create
+
+### `requirements.txt`
+```txt
+streamlit>=1.28.0
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+astropy>=5.3.0
+Pillow>=10.0.0
+pandas>=2.0.0
+```
+
+### `LICENSE` (Dual License)
+```txt
+Dual License: Academic & Commercial
+
+Academic / Non-Commercial Use:
+- Free for research, education, and personal projects
+- Attribution required
+
+Commercial Use:
+- Requires separate license
+- Contact: tlcagford@gmail.com
+```
